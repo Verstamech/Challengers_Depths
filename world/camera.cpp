@@ -93,6 +93,8 @@ void Camera::render(const Vec<float> &position, const Sprite &sprite) const {
 }
 
 void Camera::render(const GameObject &obj) const {
-    render(obj.obj_physics.position, obj.color); // FOR DEBUGGING PURPOSES
-    //render(obj.obj_physics.position, obj.sprite);
+    if (grid_toggle.on) {
+        render(obj.obj_physics.position, obj.color); // FOR DEBUGGING PURPOSES
+    }
+    render(obj.obj_physics.position, obj.sprite);
 }
