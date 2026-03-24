@@ -23,5 +23,5 @@ public:
 
 private:
     std::unique_ptr<GameObject> player;
-    Physics world_physics;
+    Physics physics;
 };

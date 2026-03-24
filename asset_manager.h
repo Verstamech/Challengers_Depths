@@ -3,6 +3,8 @@
 #include "sprite.h"
 #include "json.hpp"
 #include "graphics.h"
+#include "physics.h"
+
 
 // need to map Vec to JSON
 template <typename T>
@@ -17,8 +19,10 @@ void from_json(const nlohmann::json& j, Vec<T>& v) {
 }
 
 // needed for JSON conversions
-NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE(Sprite, filename, location, size, scale);
+NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE(Sprite, name, filename, location, size, scale, dt_per_frame, number_of_frames);
+NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE(Physics, position, velocity, acceleration, gravity, damping, walk_acceleration, jump_velocity, terminal_velocity);
 
+class GameObject;
 namespace AssetManager {
-    Sprite get_game_object_sprite(const std::string& name, Graphics& graphics);
+    void get_game_object_details(const std::string& name, Graphics& graphics, GameObject& obj);
 }

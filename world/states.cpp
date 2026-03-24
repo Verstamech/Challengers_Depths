@@ -13,6 +13,7 @@ bool on_platform(World& world ,GameObject& obj) {
 // Standing
 void Standing::on_enter(World &world, GameObject& obj) {
     obj.color = {0, 0, 255, 255};
+    obj.set_sprite("idle");
     obj.dir = 0;
 }
 
@@ -37,6 +38,7 @@ Action *Standing::input(World& world, GameObject& obj, ActionType action_type) {
 // Airborne
 void Airborne::on_enter(World &world, GameObject &obj) {
     elapsed = cooldown;
+    obj.set_sprite("jumping");
     obj.color = {255, 255, 0, 255};
 }
 
@@ -65,11 +67,16 @@ Action *Airborne::input(World &world, GameObject & obj, ActionType action_type) 
 // Running
 void Running::on_enter(World &, GameObject & obj) {
     obj.color = {0, 255, 0, 255};
+    obj.set_sprite("walking");
 }
 
 void Running::update(World& world, GameObject& obj, double dt) {
     if (!on_platform(world, obj)) {
         obj.jump_length += dt;
+        obj.set_sprite("jumping");
+    }
+    else {
+        obj.set_sprite("walking");
     }
 }
 

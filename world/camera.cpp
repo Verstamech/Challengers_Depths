@@ -6,6 +6,7 @@
 Camera::Camera(Graphics &graphics, float tilesize)
     : graphics{graphics}, tilesize{tilesize} {
     calculate_visible_tiles();
+    cam_physics.damping = 0.9f;
 }
 
 void Camera::calculate_visible_tiles() {
@@ -93,8 +94,8 @@ void Camera::render(const Vec<float> &position, const Sprite &sprite) const {
 }
 
 void Camera::render(const GameObject &obj) const {
-    if (grid_toggle.on) {
-        render(obj.obj_physics.position, obj.color); // FOR DEBUGGING PURPOSES
+    if (grid_toggle.on) { // FOR DEBUGGING PURPOSES
+        render(obj.obj_physics.position, obj.color);
     }
     render(obj.obj_physics.position, obj.sprite);
 }

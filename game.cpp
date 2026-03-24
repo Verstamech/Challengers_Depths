@@ -1,6 +1,7 @@
 #include "game.h"
 
 #include "asset_manager.h"
+#include "fsm.h"
 
 Game::Game(std::string title, int width, int height)
     : graphics{title, width, height}, world{31, 11}, camera{graphics, 64}, dt{1.0 / 60.0}, lag{0.0}, performance_frequency{SDL_GetPerformanceFrequency()}, prev_counter{SDL_GetPerformanceCounter()} {
@@ -17,7 +18,8 @@ Game::Game(std::string title, int width, int height)
     world.add_platform(13, 4, 6, 1);
 
     player = world.create_player();
-    player->sprite = AssetManager::get_game_object_sprite("player", graphics);
+    AssetManager::get_game_object_details("player", graphics, *player);
+    player->fsm->current_state->on_enter(world, *player);
 
     camera.set_location(player->obj_physics.position);
 }

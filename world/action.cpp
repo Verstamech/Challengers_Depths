@@ -7,8 +7,10 @@ void Jump::perform(World&, GameObject& obj) {
 }
 
 void MoveRight::perform(World&, GameObject& obj) {
+    obj.flip = false;
     obj.dir = 1;
 }
 void MoveLeft::perform(World&, GameObject& obj) {
+    obj.flip = true;
     obj.dir = -1;
 }
