@@ -2,6 +2,7 @@
 #include "camera.h"
 #include "game_object.h"
 #include "world.h"
+#include "audio.h"
 
 class Game {
 public:
@@ -12,10 +13,11 @@ public:
     void render();
 
 private:
-    GameObject* player;
-    World world;
+    std::unique_ptr<GameObject> player;
+    World* world;
     Graphics graphics;
     Camera camera;
+    Audio audio;
 
     // timing
     float dt;

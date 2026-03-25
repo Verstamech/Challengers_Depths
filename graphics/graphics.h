@@ -16,13 +16,15 @@ public:
     Graphics(const std::string& title, int window_width, int window_height);
     void clear();
     void update();
+    void set_title(const std::string& title);
 
     void draw(const SDL_FRect&, const Color& color, bool filled=true);
     void draw_sprite(const Vec<float>& pixel, const Sprite& sprite);
 
     int get_texture_id(const std::string& image_filename);
 
-    const int width, height;
+    const int width;
+    const int height;
 
 private:
     std::string title;

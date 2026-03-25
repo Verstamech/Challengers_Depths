@@ -1,0 +1,69 @@
+{
+  "tiles": [
+    {
+      "sprite": {
+        "name": "tile_stalactite",
+        "filename": "ocean_tiles.png",
+        "location": [0, 0],
+        "size": [16, 16],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": true,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "tile_platform_top",
+        "filename": "ocean_tiles.png",
+        "location": [0, 32],
+        "size": [16, 16],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": true,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "tile_platform",
+        "filename": "ocean_tiles.png",
+        "location": [0, 48],
+        "size": [16, 16],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": true,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "tile_barwall",
+        "filename": "ocean_tiles.png",
+        "location": [16, 16],
+        "size": [16, 16],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": true,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "blank",
+        "filename": "ocean_tiles.png",
+        "location": [0, 16],
+        "size": [16, 16],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": true,
+      "event_name": ""
+    }
+  ]
+}

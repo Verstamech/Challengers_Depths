@@ -1,15 +1,30 @@
 #include "graphics.h"
+#include <stdexcept>
+#include <SDL3/SDL.h>
+#include <SDL3/SDL_surface.h>
 
 Graphics::Graphics(const std::string &title, int window_width, int window_height)
     : title{title}, width{window_width}, height{window_height} {
 
     SDL_SetAppMetadata(title.data(), "1.0", NULL);
 
-    if (!SDL_CreateWindowAndRenderer(title.data(), width, height, SDL_WINDOW_RESIZABLE, &window, &renderer)) {
-        SDL_Log("Couldn't ceate window/renderer: %s", SDL_GetError());
+    if (!SDL_CreateWindowAndRenderer(title.data(), window_width, window_height, SDL_WINDOW_RESIZABLE, &window, &renderer)) {
+        SDL_Log("Couldn't create window/renderer: %s", SDL_GetError());
     }
 
-    SDL_SetRenderLogicalPresentation(renderer, width, height, SDL_LOGICAL_PRESENTATION_LETTERBOX);
+    SDL_SetRenderLogicalPresentation(renderer, window_width, window_height, SDL_LOGICAL_PRESENTATION_LETTERBOX);
+    SDL_SetRenderDrawBlendMode(renderer, SDL_BLENDMODE_BLEND);
+}
+
+void Graphics::draw(const SDL_FRect& rect, const Color& color, bool filled) {
+    auto [red, green, blue, alpha] = color;
+    SDL_SetRenderDrawColor(renderer, red, green, blue, alpha);
+    if (filled) {
+        SDL_RenderFillRect(renderer, &rect);
+    }
+    else {
+        SDL_RenderRect(renderer, &rect);
+    }
 }
 
 void Graphics::clear() {
@@ -22,16 +37,8 @@ void Graphics::update() {
     SDL_RenderPresent(renderer);
 }
 
-void Graphics::draw(const SDL_FRect& rect, const Color& color, bool filled) {
-    auto [red, green, blue, alpha] = color;
-    SDL_SetRenderDrawColor(renderer, red, green, blue, alpha);
-
-    if (filled) {
-        SDL_RenderFillRect(renderer, &rect);
-    }
-    else {
-        SDL_RenderRect(renderer, &rect);
-    }
+void Graphics::set_title(const std::string &title) {
+    SDL_SetWindowTitle(window, title.c_str());
 }
 
 int Graphics::get_texture_id(const std::string &image_filename) {
@@ -40,7 +47,8 @@ int Graphics::get_texture_id(const std::string &image_filename) {
         int texture_id = search->second;
         return texture_id;
     }
-    else { // This is a new image file
+    else { // this is a new image filename
+        // SDL_Texture* texture = IMG_LoadTexture(renderer, image_filename.data());
         SDL_Surface* surface = SDL_LoadPNG(image_filename.c_str());
         SDL_Texture* texture = SDL_CreateTextureFromSurface(renderer, surface);
         SDL_DestroySurface(surface);
