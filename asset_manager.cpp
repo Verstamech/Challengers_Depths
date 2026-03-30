@@ -37,7 +37,7 @@ void AssetManager::get_game_object_details(const std::string &name, Graphics &gr
 
     // get the object's physics
     Physics physics = json.at("physics").get<Physics>();
-    obj.obj_physics = physics;
+    obj.physics = physics;
 }
 
 void convert_to_tiles(Graphics& graphics, Level &level, std::vector<Tile>& tiles, const std::string& filename) {

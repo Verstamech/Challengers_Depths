@@ -1,8 +1,8 @@
 {
     "height": 15,
     "player_spawn_location": [
-        16,
-        4
+        4,
+        8
     ],
     "tile_filenames": [
         "ocean_tiles.json"
@@ -1224,14 +1224,14 @@
                 30,
                 4
             ],
-            "tile": "ocean_tiles.json:doorway"
+            "tile": "ocean_tiles.json:tile_barwall"
         },
         {
             "pos": [
                 30,
                 5
             ],
-            "tile": "ocean_tiles.json:doorway"
+            "tile": "ocean_tiles.json:tile_barwall"
         },
         {
             "pos": [

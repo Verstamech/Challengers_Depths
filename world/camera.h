@@ -28,7 +28,7 @@ private:
     float tilesize;
     Vec<float> location;
     Toggle grid_toggle;
-    Physics cam_physics;
+    Physics physics;
 
     void calculate_visible_tiles();
     Vec<int> visible_min, visible_max;

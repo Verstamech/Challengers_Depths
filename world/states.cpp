@@ -5,8 +5,8 @@
 // Helper function
 bool on_platform(World& world ,GameObject& obj) {
     constexpr float epsilon = 1e-4;
-    Vec<float> left_foot{obj.obj_physics.position.x + epsilon, obj.obj_physics.position.y - epsilon};
-    Vec<float> right_foot{obj.obj_physics.position.x + obj.size.x - epsilon, obj.obj_physics.position.y - epsilon};
+    Vec<float> left_foot{obj.physics.position.x + epsilon, obj.physics.position.y - epsilon};
+    Vec<float> right_foot{obj.physics.position.x + obj.size.x - epsilon, obj.physics.position.y - epsilon};
     return world.collides(left_foot) || world.collides(right_foot);
 }
 

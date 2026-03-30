@@ -129,6 +129,12 @@ void LevelDesigner::render() {
 
                 graphics.draw_sprite({screen_x, screen_y}, tilemap(tilemap_x, tilemap_y).sprite);
                 SDL_FRect rect{screen_x, screen_y, static_cast<float>(TILESIZE), static_cast<float>(TILESIZE)};
+
+                // highlight event tiles
+                if (!tilemap(tilemap_x, tilemap_y).event_name.empty()) {
+                    graphics.draw(rect, {255, 0, 0, 100});
+                }
+
                 Color color = selected_tile == Vec<int>{tilemap_x, tilemap_y} ? Color{255, 255, 0, 255} : Color{0, 0, 0, 255};
                 graphics.draw(rect, color, false);
 

@@ -33,7 +33,7 @@ Audio::~Audio() {
     SDL_Quit();
 }
 
-void Audio::load_sounds() {
+void Audio::load_sounds(const std::unordered_map<std::string, std::string> sound_files) {
     auto path = std::filesystem::current_path() / "assets" / "Nighttime_Stroll.ogg";
     std::ifstream input(path);
     if (!input) {

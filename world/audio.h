@@ -13,7 +13,7 @@ public:
     Audio();
     ~Audio();
 
-    void load_sounds();
+    void load_sounds(const std::unordered_map<std::string, std::string> sound_files);
     void play_sounds(const std::string& sound_name, bool loop_forever_in_background = false);
 
 private:

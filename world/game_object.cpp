@@ -3,7 +3,7 @@
 #include "fsm.h"
 #include "input.h"
 
-GameObject::GameObject(const Vec<float>& spawn_location, const Vec<float>& size, World& world, FSM* fsm, Input* input, Color color)
+GameObject::GameObject(const Vec<float>& size, FSM* fsm, Input* input, Color color)
     : size{size}, fsm{fsm}, input{input}, color{color}, spd{4} {}
 
 GameObject::~GameObject() {
@@ -19,7 +19,7 @@ void GameObject::update(World& world, double dt) {
 }
 
 std::pair<Vec<float>, Color> GameObject::get_sprite() const {
-    return {obj_physics.position, color};
+    return {physics.position, color};
 }
 
 void GameObject::set_sprite(const std::string &next_sprite) {

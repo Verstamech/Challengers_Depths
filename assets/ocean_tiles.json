@@ -54,6 +54,19 @@
     },
     {
       "sprite": {
+        "name": "doorway",
+        "filename": "ocean_tiles.png",
+        "location": [0, 48],
+        "size": [16, 16],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": true,
+      "event_name": "next_level"
+    },
+    {
+      "sprite": {
         "name": "blank",
         "filename": "ocean_tiles.png",
         "location": [0, 16],

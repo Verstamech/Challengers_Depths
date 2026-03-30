@@ -3,7 +3,7 @@
 #include "world.h"
 
 void Jump::perform(World&, GameObject& obj) {
-    obj.obj_physics.velocity.y = obj.obj_physics.jump_velocity;
+    obj.physics.velocity.y = obj.physics.jump_velocity;
 }
 
 void MoveRight::perform(World&, GameObject& obj) {
