@@ -1,8 +1,8 @@
 {
-    "height": 15,
+    "height": 24,
     "player_spawn_location": [
-        4,
-        8
+        2,
+        4
     ],
     "tile_filenames": [
         "ocean_tiles.json"
@@ -34,7 +34,7 @@
                 0,
                 3
             ],
-            "tile": "ocean_tiles.json:tile_platform_top"
+            "tile": "ocean_tiles.json:tile_platform"
         },
         {
             "pos": [
@@ -111,6 +111,69 @@
                 0,
                 14
             ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                0,
+                15
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                0,
+                16
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                0,
+                17
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                0,
+                18
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                0,
+                19
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                0,
+                20
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                0,
+                21
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                0,
+                22
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                0,
+                23
+            ],
             "tile": "ocean_tiles.json:tile_stalactite"
         },
         {
@@ -118,7 +181,7 @@
                 1,
                 0
             ],
-            "tile": "ocean_tiles.json:tile_platform"
+            "tile": "ocean_tiles.json:tile_stalactite"
         },
         {
             "pos": [
@@ -130,21 +193,7 @@
         {
             "pos": [
                 1,
-                2
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                1,
-                3
-            ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                1,
-                14
+                23
             ],
             "tile": "ocean_tiles.json:tile_stalactite"
         },
@@ -153,21 +202,7 @@
                 2,
                 0
             ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                2,
-                1
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                2,
-                2
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
+            "tile": "ocean_tiles.json:tile_stalactite"
         },
         {
             "pos": [
@@ -179,1123 +214,360 @@
         {
             "pos": [
                 2,
-                7
-            ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                2,
-                14
-            ],
-            "tile": "ocean_tiles.json:tile_stalactite"
-        },
-        {
-            "pos": [
-                3,
-                0
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                3,
-                1
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                3,
-                2
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                3,
-                3
-            ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                3,
-                7
-            ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                3,
-                14
-            ],
-            "tile": "ocean_tiles.json:tile_stalactite"
-        },
-        {
-            "pos": [
-                4,
-                0
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                4,
-                1
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                4,
-                2
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                4,
-                3
-            ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                4,
-                7
-            ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                4,
-                14
-            ],
-            "tile": "ocean_tiles.json:tile_stalactite"
-        },
-        {
-            "pos": [
-                5,
-                0
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                5,
-                1
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                5,
-                2
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                5,
-                3
-            ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                5,
-                7
-            ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                5,
-                14
-            ],
-            "tile": "ocean_tiles.json:tile_stalactite"
-        },
-        {
-            "pos": [
-                6,
-                0
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                6,
-                1
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                6,
-                2
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                6,
-                3
-            ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                6,
-                7
-            ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                6,
-                14
-            ],
-            "tile": "ocean_tiles.json:tile_stalactite"
-        },
-        {
-            "pos": [
-                7,
-                0
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                7,
-                1
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                7,
-                2
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                7,
-                3
-            ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                7,
-                14
-            ],
-            "tile": "ocean_tiles.json:tile_stalactite"
-        },
-        {
-            "pos": [
-                8,
-                0
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                8,
-                1
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                8,
-                2
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                8,
-                3
-            ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                8,
-                14
-            ],
-            "tile": "ocean_tiles.json:tile_stalactite"
-        },
-        {
-            "pos": [
-                9,
-                0
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                9,
-                1
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                9,
-                2
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                9,
-                3
-            ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                9,
-                14
-            ],
-            "tile": "ocean_tiles.json:tile_stalactite"
-        },
-        {
-            "pos": [
-                10,
-                0
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                10,
-                1
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                10,
-                2
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                10,
-                3
-            ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                10,
                 10
             ],
             "tile": "ocean_tiles.json:tile_platform_top"
         },
         {
             "pos": [
-                10,
-                14
+                2,
+                13
+            ],
+            "tile": "ocean_tiles.json:tile_platform_top"
+        },
+        {
+            "pos": [
+                2,
+                23
             ],
             "tile": "ocean_tiles.json:tile_stalactite"
         },
         {
             "pos": [
-                11,
+                3,
                 0
             ],
-            "tile": "ocean_tiles.json:tile_platform"
+            "tile": "ocean_tiles.json:tile_stalactite"
         },
         {
             "pos": [
-                11,
-                1
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                11,
-                2
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                11,
+                3,
                 3
             ],
             "tile": "ocean_tiles.json:tile_platform_top"
         },
         {
             "pos": [
-                11,
+                3,
                 10
             ],
             "tile": "ocean_tiles.json:tile_platform_top"
         },
         {
             "pos": [
-                11,
-                14
+                3,
+                13
+            ],
+            "tile": "ocean_tiles.json:tile_platform_top"
+        },
+        {
+            "pos": [
+                3,
+                20
+            ],
+            "tile": "ocean_tiles.json:tile_platform_top"
+        },
+        {
+            "pos": [
+                3,
+                23
             ],
             "tile": "ocean_tiles.json:tile_stalactite"
         },
         {
             "pos": [
-                12,
+                4,
                 0
             ],
-            "tile": "ocean_tiles.json:tile_platform"
+            "tile": "ocean_tiles.json:tile_stalactite"
         },
         {
             "pos": [
-                12,
+                4,
+                16
+            ],
+            "tile": "ocean_tiles.json:tile_stalactite"
+        },
+        {
+            "pos": [
+                4,
+                17
+            ],
+            "tile": "ocean_tiles.json:tile_platform_top"
+        },
+        {
+            "pos": [
+                4,
+                20
+            ],
+            "tile": "ocean_tiles.json:tile_platform_top"
+        },
+        {
+            "pos": [
+                4,
+                23
+            ],
+            "tile": "ocean_tiles.json:tile_stalactite"
+        },
+        {
+            "pos": [
+                5,
+                0
+            ],
+            "tile": "ocean_tiles.json:tile_stalactite"
+        },
+        {
+            "pos": [
+                5,
+                6
+            ],
+            "tile": "ocean_tiles.json:tile_stalactite"
+        },
+        {
+            "pos": [
+                5,
+                7
+            ],
+            "tile": "ocean_tiles.json:tile_platform_top"
+        },
+        {
+            "pos": [
+                5,
+                16
+            ],
+            "tile": "ocean_tiles.json:tile_stalactite"
+        },
+        {
+            "pos": [
+                5,
+                17
+            ],
+            "tile": "ocean_tiles.json:tile_platform_top"
+        },
+        {
+            "pos": [
+                5,
+                23
+            ],
+            "tile": "ocean_tiles.json:tile_stalactite"
+        },
+        {
+            "pos": [
+                6,
+                0
+            ],
+            "tile": "ocean_tiles.json:tile_stalactite"
+        },
+        {
+            "pos": [
+                6,
                 1
             ],
             "tile": "ocean_tiles.json:tile_platform"
         },
         {
             "pos": [
-                12,
-                2
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                12,
-                3
-            ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                12,
-                10
-            ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                12,
-                14
+                6,
+                6
             ],
             "tile": "ocean_tiles.json:tile_stalactite"
         },
         {
             "pos": [
-                13,
+                6,
+                7
+            ],
+            "tile": "ocean_tiles.json:tile_platform_top"
+        },
+        {
+            "pos": [
+                6,
+                16
+            ],
+            "tile": "ocean_tiles.json:tile_stalactite"
+        },
+        {
+            "pos": [
+                6,
+                17
+            ],
+            "tile": "ocean_tiles.json:tile_platform_top"
+        },
+        {
+            "pos": [
+                6,
+                23
+            ],
+            "tile": "ocean_tiles.json:tile_stalactite"
+        },
+        {
+            "pos": [
+                7,
                 0
             ],
             "tile": "ocean_tiles.json:tile_platform"
         },
         {
             "pos": [
-                13,
+                7,
                 1
             ],
             "tile": "ocean_tiles.json:tile_platform"
         },
         {
             "pos": [
-                13,
+                7,
                 2
             ],
             "tile": "ocean_tiles.json:tile_platform"
         },
         {
             "pos": [
-                13,
+                7,
                 3
             ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                13,
-                10
-            ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                13,
-                14
-            ],
-            "tile": "ocean_tiles.json:tile_stalactite"
-        },
-        {
-            "pos": [
-                14,
-                0
-            ],
             "tile": "ocean_tiles.json:tile_platform"
         },
         {
             "pos": [
-                14,
-                1
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                14,
-                2
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                14,
-                3
-            ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                14,
-                14
-            ],
-            "tile": "ocean_tiles.json:tile_stalactite"
-        },
-        {
-            "pos": [
-                15,
-                0
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                15,
-                1
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                15,
-                2
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                15,
-                3
-            ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                15,
-                14
-            ],
-            "tile": "ocean_tiles.json:tile_stalactite"
-        },
-        {
-            "pos": [
-                16,
-                0
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                16,
-                1
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                16,
-                2
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                16,
-                3
-            ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                16,
-                14
-            ],
-            "tile": "ocean_tiles.json:tile_stalactite"
-        },
-        {
-            "pos": [
-                17,
-                0
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                17,
-                1
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                17,
-                2
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                17,
-                3
-            ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                17,
-                14
-            ],
-            "tile": "ocean_tiles.json:tile_stalactite"
-        },
-        {
-            "pos": [
-                18,
-                0
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                18,
-                1
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                18,
-                2
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                18,
-                3
-            ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                18,
-                14
-            ],
-            "tile": "ocean_tiles.json:tile_stalactite"
-        },
-        {
-            "pos": [
-                19,
-                0
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                19,
-                1
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                19,
-                2
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                19,
-                3
-            ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                19,
-                14
-            ],
-            "tile": "ocean_tiles.json:tile_stalactite"
-        },
-        {
-            "pos": [
-                20,
-                0
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                20,
-                1
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                20,
-                2
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                20,
-                3
-            ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                20,
-                14
-            ],
-            "tile": "ocean_tiles.json:tile_stalactite"
-        },
-        {
-            "pos": [
-                21,
-                0
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                21,
-                1
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                21,
-                2
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                21,
-                3
-            ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                21,
-                14
-            ],
-            "tile": "ocean_tiles.json:tile_stalactite"
-        },
-        {
-            "pos": [
-                22,
-                0
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                22,
-                1
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                22,
-                2
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                22,
-                3
-            ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                22,
-                14
-            ],
-            "tile": "ocean_tiles.json:tile_stalactite"
-        },
-        {
-            "pos": [
-                23,
-                0
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                23,
-                1
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                23,
-                2
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                23,
-                3
-            ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                23,
-                14
-            ],
-            "tile": "ocean_tiles.json:tile_stalactite"
-        },
-        {
-            "pos": [
-                24,
-                0
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                24,
-                1
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                24,
-                2
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                24,
-                3
-            ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                24,
-                14
-            ],
-            "tile": "ocean_tiles.json:tile_stalactite"
-        },
-        {
-            "pos": [
-                25,
-                0
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                25,
-                1
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                25,
-                2
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                25,
-                3
-            ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                25,
-                14
-            ],
-            "tile": "ocean_tiles.json:tile_stalactite"
-        },
-        {
-            "pos": [
-                26,
-                0
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                26,
-                1
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                26,
-                2
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                26,
-                3
-            ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                26,
-                14
-            ],
-            "tile": "ocean_tiles.json:tile_stalactite"
-        },
-        {
-            "pos": [
-                27,
-                0
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                27,
-                1
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                27,
-                2
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                27,
-                3
-            ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                27,
-                14
-            ],
-            "tile": "ocean_tiles.json:tile_stalactite"
-        },
-        {
-            "pos": [
-                28,
-                0
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                28,
-                1
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                28,
-                2
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                28,
-                3
-            ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                28,
-                14
-            ],
-            "tile": "ocean_tiles.json:tile_stalactite"
-        },
-        {
-            "pos": [
-                29,
-                0
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                29,
-                1
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                29,
-                2
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                29,
-                3
-            ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                29,
-                14
-            ],
-            "tile": "ocean_tiles.json:tile_stalactite"
-        },
-        {
-            "pos": [
-                30,
-                0
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                30,
-                1
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                30,
-                2
-            ],
-            "tile": "ocean_tiles.json:tile_platform"
-        },
-        {
-            "pos": [
-                30,
-                3
-            ],
-            "tile": "ocean_tiles.json:tile_platform_top"
-        },
-        {
-            "pos": [
-                30,
+                7,
                 4
             ],
             "tile": "ocean_tiles.json:tile_barwall"
         },
         {
             "pos": [
-                30,
+                7,
                 5
             ],
             "tile": "ocean_tiles.json:tile_barwall"
         },
         {
             "pos": [
-                30,
+                7,
                 6
             ],
             "tile": "ocean_tiles.json:tile_barwall"
         },
         {
             "pos": [
-                30,
+                7,
                 7
             ],
             "tile": "ocean_tiles.json:tile_barwall"
         },
         {
             "pos": [
-                30,
+                7,
                 8
             ],
             "tile": "ocean_tiles.json:tile_barwall"
         },
         {
             "pos": [
-                30,
+                7,
                 9
             ],
             "tile": "ocean_tiles.json:tile_barwall"
         },
         {
             "pos": [
-                30,
+                7,
                 10
             ],
             "tile": "ocean_tiles.json:tile_barwall"
         },
         {
             "pos": [
-                30,
+                7,
                 11
             ],
             "tile": "ocean_tiles.json:tile_barwall"
         },
         {
             "pos": [
-                30,
+                7,
                 12
             ],
             "tile": "ocean_tiles.json:tile_barwall"
         },
         {
             "pos": [
-                30,
+                7,
                 13
             ],
             "tile": "ocean_tiles.json:tile_barwall"
         },
         {
             "pos": [
-                30,
+                7,
                 14
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                7,
+                15
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                7,
+                16
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                7,
+                17
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                7,
+                18
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                7,
+                19
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                7,
+                20
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                7,
+                21
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                7,
+                22
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                7,
+                23
             ],
             "tile": "ocean_tiles.json:tile_stalactite"
         }
     ],
-    "width": 31
+    "width": 8
 }

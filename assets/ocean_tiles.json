@@ -56,8 +56,8 @@
       "sprite": {
         "name": "doorway",
         "filename": "ocean_tiles.png",
-        "location": [0, 48],
-        "size": [16, 16],
+        "location": [32, 16],
+        "size": [16, 32],
         "scale": 4,
         "number_of_frames": 1,
         "dt_per_frame": -1

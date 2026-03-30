@@ -1,7 +1,7 @@
 {
     "height": 15,
     "player_spawn_location": [
-        16,
+        4,
         4
     ],
     "tile_filenames": [
@@ -697,6 +697,13 @@
         {
             "pos": [
                 15,
+                8
+            ],
+            "tile": "ocean_tiles.json:tile_platform_top"
+        },
+        {
+            "pos": [
+                15,
                 14
             ],
             "tile": "ocean_tiles.json:tile_stalactite"
@@ -726,6 +733,13 @@
             "pos": [
                 16,
                 3
+            ],
+            "tile": "ocean_tiles.json:tile_platform_top"
+        },
+        {
+            "pos": [
+                16,
+                8
             ],
             "tile": "ocean_tiles.json:tile_platform_top"
         },
@@ -802,6 +816,55 @@
         {
             "pos": [
                 18,
+                4
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                18,
+                5
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                18,
+                6
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                18,
+                7
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                18,
+                8
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                18,
+                9
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                18,
+                10
+            ],
+            "tile": "ocean_tiles.json:tile_platform_top"
+        },
+        {
+            "pos": [
+                18,
                 14
             ],
             "tile": "ocean_tiles.json:tile_stalactite"
@@ -831,6 +894,13 @@
             "pos": [
                 19,
                 3
+            ],
+            "tile": "ocean_tiles.json:tile_platform_top"
+        },
+        {
+            "pos": [
+                19,
+                10
             ],
             "tile": "ocean_tiles.json:tile_platform_top"
         },
@@ -868,6 +938,62 @@
                 3
             ],
             "tile": "ocean_tiles.json:tile_platform_top"
+        },
+        {
+            "pos": [
+                20,
+                4
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                20,
+                5
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                20,
+                6
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                20,
+                7
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                20,
+                8
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                20,
+                9
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                20,
+                10
+            ],
+            "tile": "ocean_tiles.json:tile_platform_top"
+        },
+        {
+            "pos": [
+                20,
+                11
+            ],
+            "tile": "ocean_tiles.json:doorway"
         },
         {
             "pos": [
@@ -901,6 +1027,55 @@
             "pos": [
                 21,
                 3
+            ],
+            "tile": "ocean_tiles.json:tile_platform_top"
+        },
+        {
+            "pos": [
+                21,
+                4
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                21,
+                5
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                21,
+                6
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                21,
+                7
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                21,
+                8
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                21,
+                9
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                21,
+                10
             ],
             "tile": "ocean_tiles.json:tile_platform_top"
         },
@@ -936,6 +1111,13 @@
             "pos": [
                 22,
                 3
+            ],
+            "tile": "ocean_tiles.json:tile_platform_top"
+        },
+        {
+            "pos": [
+                22,
+                10
             ],
             "tile": "ocean_tiles.json:tile_platform_top"
         },
@@ -971,6 +1153,55 @@
             "pos": [
                 23,
                 3
+            ],
+            "tile": "ocean_tiles.json:tile_platform_top"
+        },
+        {
+            "pos": [
+                23,
+                4
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                23,
+                5
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                23,
+                6
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                23,
+                7
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                23,
+                8
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                23,
+                9
+            ],
+            "tile": "ocean_tiles.json:tile_barwall"
+        },
+        {
+            "pos": [
+                23,
+                10
             ],
             "tile": "ocean_tiles.json:tile_platform_top"
         },
@@ -1041,6 +1272,13 @@
             "pos": [
                 25,
                 3
+            ],
+            "tile": "ocean_tiles.json:tile_platform_top"
+        },
+        {
+            "pos": [
+                25,
+                10
             ],
             "tile": "ocean_tiles.json:tile_platform_top"
         },
@@ -1076,6 +1314,20 @@
             "pos": [
                 26,
                 3
+            ],
+            "tile": "ocean_tiles.json:tile_platform_top"
+        },
+        {
+            "pos": [
+                26,
+                7
+            ],
+            "tile": "ocean_tiles.json:tile_platform_top"
+        },
+        {
+            "pos": [
+                26,
+                10
             ],
             "tile": "ocean_tiles.json:tile_platform_top"
         },
@@ -1111,6 +1363,13 @@
             "pos": [
                 27,
                 3
+            ],
+            "tile": "ocean_tiles.json:tile_platform_top"
+        },
+        {
+            "pos": [
+                27,
+                7
             ],
             "tile": "ocean_tiles.json:tile_platform_top"
         },
@@ -1146,6 +1405,13 @@
             "pos": [
                 28,
                 3
+            ],
+            "tile": "ocean_tiles.json:tile_platform_top"
+        },
+        {
+            "pos": [
+                28,
+                7
             ],
             "tile": "ocean_tiles.json:tile_platform_top"
         },
@@ -1224,14 +1490,14 @@
                 30,
                 4
             ],
-            "tile": "ocean_tiles.json:doorway"
+            "tile": "ocean_tiles.json:tile_barwall"
         },
         {
             "pos": [
                 30,
                 5
             ],
-            "tile": "ocean_tiles.json:doorway"
+            "tile": "ocean_tiles.json:tile_barwall"
         },
         {
             "pos": [
