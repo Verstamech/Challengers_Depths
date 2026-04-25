@@ -1,1 +1,5 @@
 /cmake-build-debug/
+*.xml
+.idea/.name
+.idea/editor.xml
+.idea/vcs.xml
