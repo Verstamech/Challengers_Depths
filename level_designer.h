@@ -40,4 +40,5 @@ private:
     void draw_tile_display();
     void update_tilemap();
     void place_player();
+    void place_enemy(std::string enemy_name);
 };

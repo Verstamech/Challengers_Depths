@@ -1,4 +1,13 @@
 {
+    "enemies": [
+        {
+            "enemy": "spearfish",
+            "pos": [
+                11.0,
+                7.0
+            ]
+        }
+    ],
     "height": 15,
     "player_spawn_location": [
         4,

@@ -1,0 +1,44 @@
+{
+    "sprites" : [
+        {
+            "name" : "idle",
+            "filename" : "spearfish_idle.png",
+            "location" : [0, 0],
+            "size" : [64, 64],
+            "scale" : 2,
+            "number_of_frames" : 1,
+            "dt_per_frame" : 0.1
+        },
+        {
+            "name" : "walking",
+            "filename" : "bee_walking.png",
+            "location" : [0, 0],
+            "size" : [48, 48],
+            "scale" : 1.5,
+            "number_of_frames" : 6,
+            "dt_per_frame" : 0.1
+        },
+        {
+            "name" : "aggro",
+            "filename" : "spearfish_aggro.png",
+            "location" : [0, 0],
+            "size" : [64, 64],
+            "scale" : 2,
+            "number_of_frames" : 6,
+            "dt_per_frame" : 0.1
+        }
+    ],
+    "physics" : {
+        "velocity": [0, 0],
+        "acceleration" : [0, 0],
+        "gravity": 0,
+        "damping": 0.9,
+        "walk_acceleration": 60.0,
+        "jump_velocity": 20.0,
+        "terminal_velocity": 30.0
+    },
+    "size": [2,2],
+    "health": 5,
+    "max_health": 5,
+    "damage": 1
+}

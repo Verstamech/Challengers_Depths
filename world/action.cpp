@@ -14,3 +14,9 @@ void MoveLeft::perform(World&, GameObject& obj) {
     obj.flip = true;
     obj.dir = -1;
 }
+
+void ShootFireball::perform(World &world, GameObject &obj) {
+    auto fireball = dynamic_cast<Projectile*>(world.available_items["fireball"]());
+    fireball->physics.position = obj.physics.position;
+    world.projectiles.push_back(fireball);
+}

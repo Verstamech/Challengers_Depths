@@ -19,7 +19,7 @@ public:
     void set_title(const std::string& title);
 
     void draw(const SDL_FRect&, const Color& color, bool filled=true);
-    void draw_sprite(const Vec<float>& pixel, const Sprite& sprite);
+    void draw_sprite(const Vec<float>& pixel, const Sprite& sprite, bool flash = false);
 
     int get_texture_id(const std::string& image_filename);
 

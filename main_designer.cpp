@@ -10,7 +10,7 @@ SDL_AppResult SDL_AppInit(void **appstate, int, char**) {
         return SDL_APP_FAILURE;
     }
 
-    auto designer = new LevelDesigner("level_2", 8, 24);
+    auto designer = new LevelDesigner("level_1", 31, 15);
     *appstate = designer;
 
     return SDL_APP_CONTINUE;  /* carry on with the program! */
