@@ -37,8 +37,8 @@
         "jump_velocity": 12.0,
         "terminal_velocity": 15.0
     },
-    "size": [2,2],
-    "health": 20,
-    "max_health": 20,
-    "damage": 2
+    "size": [1,1],
+    "health": 5,
+    "max_health": 5,
+    "damage": 5
 }

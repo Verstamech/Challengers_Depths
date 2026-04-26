@@ -4,8 +4,8 @@
             "name" : "idle",
             "filename" : "spearfish_idle.png",
             "location" : [0, 0],
-            "size" : [64, 64],
-            "scale" : 2,
+            "size" : [32, 32],
+            "scale" : 4,
             "number_of_frames" : 1,
             "dt_per_frame" : 0.1
         },
@@ -22,9 +22,9 @@
             "name" : "aggro",
             "filename" : "spearfish_aggro.png",
             "location" : [0, 0],
-            "size" : [64, 64],
-            "scale" : 2,
-            "number_of_frames" : 6,
+            "size" : [32, 32],
+            "scale" : 4,
+            "number_of_frames" : 2,
             "dt_per_frame" : 0.1
         }
     ],
