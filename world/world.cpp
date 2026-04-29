@@ -126,7 +126,7 @@ void World::update_object(GameObject *obj, float dt) {
     obj->physics.velocity = future_velocity;
 }
 
-void World::move_to(Vec<float>& position, const Vec<float>& size, Vec<float>& velocity) {
+void World::move_to(Vec<float>& position, const Vec<int>& size, Vec<float>& velocity) {
     float epsilon = 0.001f;
     auto left = position.x;
     auto right = position.x + size.x - epsilon;
@@ -168,7 +168,7 @@ void World::move_to(Vec<float>& position, const Vec<float>& size, Vec<float>& ve
         }
     }
     // BOX'S TOP LEFT TOUCHING BOTTOM RIGHT OF AN OBJECT
-    else if (collides({left, top})) {
+    if (collides({left, top})) {
         dx = std::ceil(position.x) - position.x;
         dy = position.y - std::floor(position.y);
 
@@ -182,7 +182,7 @@ void World::move_to(Vec<float>& position, const Vec<float>& size, Vec<float>& ve
         }
     }
     // BOX'S TOP RIGHT TOUCHING BOTTOM LEFT OF AN OBJECT
-    else if (collides({right, top})) {
+    if (collides({right, top})) {
         dx = position.x - std::floor(position.x);
         dy = position.y - std::floor(position.y);
 
@@ -196,7 +196,7 @@ void World::move_to(Vec<float>& position, const Vec<float>& size, Vec<float>& ve
         }
     }
     // BOX'S BOTTOM RIGHT TOUCHING TOP LEFT OF AN OBJECT
-    else if (collides({right, bottom})) {
+    if (collides({right, bottom})) {
         dx = position.x - std::floor(position.x);
         dy = std::ceil(position.y) - position.y;
 

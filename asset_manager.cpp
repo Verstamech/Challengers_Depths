@@ -51,7 +51,7 @@ void AssetManager::get_game_object_details(const std::string& name, Graphics& gr
     obj.physics.position = pos;
 
     // get the object's size
-    obj.size = json.at("size").get<Vec<float>>();
+    obj.size = json.at("size").get<Vec<int>>();
 
     obj.health = json.at("health").get<int>();
     obj.max_health = json.at("max_health").get<int>();
@@ -128,7 +128,7 @@ void AssetManager::get_available_items(const std::string &filename, Graphics &gr
         std::string name = j.at("name").get<std::string>();
         Physics physics = j.at("physics").get<Physics>();
         double lifetime = j.at("lifetime").get<double>();
-        Vec<float> size = j.at("size").get<Vec<float>>();
+        Vec<int> size = j.at("size").get<Vec<int>>();
         int damage = j.at("damage").get<int>();
         std::vector<Sprite> sprites_from_json = j.at("sprites").get<std::vector<Sprite>>();
 

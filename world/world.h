@@ -26,7 +26,7 @@ public:
     void update_object(GameObject* obj, float dt);
     void load_level(const Level& level);
 
-    void move_to(Vec<float>& position, const Vec<float>& size, Vec<float>& velocity);
+    void move_to(Vec<float>& position, const Vec<int>& size, Vec<float>& velocity);
 
     Tilemap tilemap;
     bool end_level{false};

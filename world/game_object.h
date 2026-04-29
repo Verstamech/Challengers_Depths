@@ -32,7 +32,7 @@ public:
     std::string obj_name;
     Physics physics;
     bool flip = false;
-    Vec<float> size;
+    Vec<int> size;
     FSM* fsm;
     Input* input;
     Color color;
