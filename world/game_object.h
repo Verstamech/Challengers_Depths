@@ -40,8 +40,7 @@ public:
     Sprite sprite; // The sprite being displayed currently
     std::string sprite_name; // The name of the sprite being displayed
 
-    float spd;
-    float dir;
+    float dir = 0;
     double jump_length = 0;
 
     // combat stuff

@@ -100,13 +100,13 @@ void World::update_object(GameObject *obj, float dt) {
     auto velocity = obj->physics.velocity;
     auto acceleration = obj->physics.acceleration;
 
-    auto spd = obj->spd;
+    // auto spd = obj->spd;
     auto dir = obj->dir;
-    velocity.x = spd * dir;
+    velocity.x = acceleration.x * dir;
     velocity.y += 0.5f * acceleration.y * dt;
     position += velocity * dt;
 
-    velocity.x = std::clamp(velocity.x, -obj->physics.terminal_velocity, obj->physics.terminal_velocity);
+    velocity.x = std::clamp(velocity.x, -acceleration.x, acceleration.x);
     velocity.y = std::clamp(velocity.y, -obj->physics.terminal_velocity, obj->physics.terminal_velocity);
 
     // ... the code to update velocity and position

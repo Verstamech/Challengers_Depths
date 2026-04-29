@@ -10,15 +10,6 @@
             "dt_per_frame" : 0.1
         },
         {
-            "name" : "walking",
-            "filename" : "bee_walking.png",
-            "location" : [0, 0],
-            "size" : [48, 48],
-            "scale" : 1.5,
-            "number_of_frames" : 6,
-            "dt_per_frame" : 0.1
-        },
-        {
             "name" : "aggro",
             "filename" : "spearfish_aggro.png",
             "location" : [0, 0],

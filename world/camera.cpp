@@ -2,6 +2,7 @@
 #include "graphics.h"
 #include "physics.h"
 #include "game_object.h"
+#include "world.h"
 
 Camera::Camera(Graphics &graphics, float tilesize)
     : graphics{graphics}, tilesize{tilesize} {
