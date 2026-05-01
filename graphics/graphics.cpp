@@ -97,3 +97,14 @@ void Graphics::draw_sprite(const Vec<float> &pixel, const Sprite &sprite, bool f
         SDL_SetTextureAlphaMod(texture, 255);
     }
 }
+
+Sprite Graphics::load_image(const std::string &filename) {
+    int id = get_texture_id(filename);
+    auto texture = textures.at(id);
+    float width, height;
+    SDL_GetTextureSize(texture, &width, &height);
+    Sprite sprite;
+    sprite.texture_id = id;
+    sprite.size = {width, height};
+    return sprite;
+}

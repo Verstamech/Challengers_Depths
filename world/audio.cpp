@@ -33,24 +33,26 @@ Audio::~Audio() {
     SDL_Quit();
 }
 
-void Audio::load_sounds(const std::unordered_map<std::string, std::string> sound_files) {
-    auto path = std::filesystem::current_path() / "assets" / "Nighttime_Stroll.ogg";
-    std::ifstream input(path);
-    if (!input) {
-        throw std::runtime_error("Could not open: " + path.string());
+void Audio::load_sounds(const std::vector<Sound>& sounds_to_load) {
+    for (auto sound : sounds_to_load) {
+        auto path = std::filesystem::current_path() / "assets" / sound.filename;
+        std::ifstream input{path};
+        if (!input) {
+            throw std::runtime_error("Could not open filename: " + path.string());
+        }
+        MIX_Audio* effect = MIX_LoadAudio(mixer, path.string().c_str(), sound.loop_forever);
+        if (!effect) {
+            std::string msg{SDL_GetError()};
+            throw std::runtime_error(msg + "\nUnable to load sound from " + path.string());
+        }
+        sounds[sound.name] = effect;
     }
-    MIX_Audio* effect = MIX_LoadAudio(mixer, path.string().c_str(), true);
-    if (!effect) {
-        std::string msg{SDL_GetError()};
-        throw std::runtime_error(msg + "\nUnable to load sound from: " + path.string());
-    }
-    sounds["background"] = effect;
 }
 
 void Audio::play_sounds(const std::string& sound_name, bool loop_forever_in_background) {
     auto sound = sounds.find(sound_name);
     if (sound == sounds.end()) {
-        throw std::runtime_error("Cannont find sound: " + sound_name);
+        throw std::runtime_error("Cannot find sound: " + sound_name);
     }
 
     if (loop_forever_in_background) {

@@ -8,12 +8,18 @@ struct MIX_Mixer;
 struct MIX_Audio;
 struct MIX_Track;
 
+struct Sound {
+    std::string name;
+    std::string filename;
+    bool loop_forever{false};
+};
+
 class Audio {
 public:
     Audio();
     ~Audio();
 
-    void load_sounds(const std::unordered_map<std::string, std::string> sound_files);
+    void load_sounds(const std::vector<Sound>& sounds_to_load);
     void play_sounds(const std::string& sound_name, bool loop_forever_in_background = false);
 
 private:

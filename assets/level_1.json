@@ -1,4 +1,16 @@
 {
+    "backgrounds": [
+        {
+            "distance": 4.0,
+            "filename": "spr_bg_1.png",
+            "scale": 4.0
+        },
+        {
+            "distance": 2.0,
+            "filename": "spr_bg_2.png",
+            "scale": 4.0
+        }
+    ],
     "enemies": [
         {
             "enemy": "spearfish",
@@ -6,6 +18,13 @@
                 11.0,
                 7.0
             ]
+        }
+    ],
+    "sounds": [
+        {
+            "filename": "Nighttime_Stroll.ogg",
+            "loop_forever": true,
+            "name": "background"
         }
     ],
     "height": 15,

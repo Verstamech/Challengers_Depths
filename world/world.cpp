@@ -134,12 +134,12 @@ void World::move_to(Vec<float>& position, const Vec<int>& size, Vec<float>& velo
     auto top = position.y + size.y - epsilon;
 
     // test for collisions on the bottom or top first
-    if (collides({left, bottom}) || collides({right, bottom})) {
+    if (collides({left, bottom}) && collides({right, bottom})) {
         position.y = std::ceil(position.y);
         velocity.y = 0;
         std::cout << "Touching floor\n";
     }
-    else if (collides({left, top}) || collides({right, top})) {
+    else if (collides({left, top}) && collides({right, top})) {
         position.y = std::floor(position.y);
         velocity.y = 0;
         std::cout << "Touching ceiling\n";
@@ -174,7 +174,7 @@ void World::move_to(Vec<float>& position, const Vec<int>& size, Vec<float>& velo
         }
     }
     // BOX'S TOP LEFT TOUCHING BOTTOM RIGHT OF AN OBJECT
-    if (collides({left, top})) {
+    else if (collides({left, top})) {
         dx = std::ceil(position.x) - position.x;
         dy = position.y - std::floor(position.y);
 
@@ -190,7 +190,7 @@ void World::move_to(Vec<float>& position, const Vec<int>& size, Vec<float>& velo
         }
     }
     // BOX'S TOP RIGHT TOUCHING BOTTOM LEFT OF AN OBJECT
-    if (collides({right, top})) {
+    else if (collides({right, top})) {
         dx = position.x - std::floor(position.x);
         dy = position.y - std::floor(position.y);
 
@@ -206,7 +206,7 @@ void World::move_to(Vec<float>& position, const Vec<int>& size, Vec<float>& velo
         }
     }
     // BOX'S BOTTOM RIGHT TOUCHING TOP LEFT OF AN OBJECT
-    if (collides({right, bottom})) {
+    else if (collides({right, bottom})) {
         dx = position.x - std::floor(position.x);
         dy = std::ceil(position.y) - position.y;
 
@@ -225,7 +225,10 @@ void World::move_to(Vec<float>& position, const Vec<int>& size, Vec<float>& velo
 }
 
 void World::load_level(const Level& level) {
-    audio->load_sounds({});
+    audio->load_sounds(level.sounds);
+
+    // get the backgrounds
+    backgrounds = level.backgrounds;
     for (const auto& [pos, tile_id] : level.tile_locations) {
         tilemap(pos.x, pos.y) = level.tile_types.at(tile_id);
     }

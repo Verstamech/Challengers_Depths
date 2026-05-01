@@ -97,6 +97,13 @@ void AssetManager::get_level_details(Graphics &graphics, Level &level) {
         std::vector<Tile> tiles = tile_json.at("tiles").get<std::vector<Tile>>();
         convert_to_tiles(graphics, level, tiles, filename);
     }
+
+    // get sprites for backgrounds
+    for (auto& background : level.backgrounds) {
+        std::string filename = path_start.string() + "\\" + (background.filename);
+        background.sprite = graphics.load_image(filename);
+        background.sprite.scale = background.scale;
+    }
 }
 
 void AssetManager::update_level_details(const Level& level) {

@@ -84,6 +84,9 @@ void Game::render() {
     // clear
     graphics.clear();
 
+    // draw the backgrounds
+    camera.render(world->backgrounds);
+    
     // draw the world
     camera.render(world->tilemap);
 

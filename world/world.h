@@ -39,6 +39,7 @@ public:
     Events events;
     std::vector<GameObject*> game_objects;
     std::vector<Projectile*> projectiles;
+    std::vector<Background> backgrounds;
 
     void touch_tiles(GameObject& obj);
 

@@ -4,6 +4,25 @@
         2,
         4
     ],
+    "sounds": [
+        {
+            "filename": "Nighttime_Stroll.ogg",
+            "loop_forever": true,
+            "name": "background"
+        }
+    ],
+    "backgrounds" : [
+        {
+            "filename": "spr_bg_1.png",
+            "scale" : 5,
+            "distance": 4
+        },
+        {
+            "filename" : "spr_bg_2.png",
+            "scale" : 5,
+            "distance" : 2
+        }
+    ],
     "tile_filenames": [
         "ocean_tiles.json"
     ],

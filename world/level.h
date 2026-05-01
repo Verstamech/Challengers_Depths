@@ -5,6 +5,7 @@
 
 #include <string>
 #include <map>
+#include "audio.h"
 
 using TileLocations = std::map<Vec<int>, std::string>;
 using EnemyLocations = std::map<Vec<float>, std::string>;
@@ -23,4 +24,7 @@ public:
 
     Vec<int> player_spawn_location{-1, -1};
     EnemyLocations enemy_locations;
+
+    std::vector<Sound> sounds;
+    std::vector<Background> backgrounds;
 };

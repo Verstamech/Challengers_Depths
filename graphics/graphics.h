@@ -20,6 +20,7 @@ public:
 
     void draw(const SDL_FRect&, const Color& color, bool filled=true);
     void draw_sprite(const Vec<float>& pixel, const Sprite& sprite, bool flash = false);
+    Sprite load_image(const std::string &filename);
 
     int get_texture_id(const std::string& image_filename);
 
