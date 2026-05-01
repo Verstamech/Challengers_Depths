@@ -134,23 +134,27 @@ void World::move_to(Vec<float>& position, const Vec<int>& size, Vec<float>& velo
     auto top = position.y + size.y - epsilon;
 
     // test for collisions on the bottom or top first
-    if (collides({left, bottom}) && collides({right, bottom})) {
+    if (collides({left, bottom}) || collides({right, bottom})) {
         position.y = std::ceil(position.y);
         velocity.y = 0;
+        std::cout << "Touching floor\n";
     }
-    else if (collides({left, top}) && collides({right, top})) {
+    else if (collides({left, top}) || collides({right, top})) {
         position.y = std::floor(position.y);
         velocity.y = 0;
+        std::cout << "Touching ceiling\n";
     }
 
     // then test for collisions on the left and right sides
     if (collides({left, bottom}) && collides({left, top})) {
         position.x = std::ceil(position.x);
         velocity.x = 0;
+        std::cout << "Touching left side of wall\n";
     }
     else if (collides({right, bottom}) && collides({right, top})) {
         position.x = std::floor(position.x);
         velocity.x = 0;
+        std::cout << "Touching right side of wall\n";
     }
 
     // now test each corner
@@ -161,10 +165,12 @@ void World::move_to(Vec<float>& position, const Vec<int>& size, Vec<float>& velo
         if (dx > dy) {
             position.y = std::ceil(position.y);
             velocity.y = 0;
+            std::cout << "Hanging off top right edge\n";
         }
         else {
             position.x = std::ceil(position.x);
             velocity.x = 0;
+            std::cout << "Being moved rightwards\n";
         }
     }
     // BOX'S TOP LEFT TOUCHING BOTTOM RIGHT OF AN OBJECT
@@ -175,10 +181,12 @@ void World::move_to(Vec<float>& position, const Vec<int>& size, Vec<float>& velo
         if (dx > dy) {
             position.y = std::floor(position.y);
             velocity.y = 0;
+            std::cout << "Being moved downwards\n";
         }
         else {
             position.x = std::ceil(position.x);
             velocity.x = 0;
+            std::cout << "Being moved rightwards 2\n";
         }
     }
     // BOX'S TOP RIGHT TOUCHING BOTTOM LEFT OF AN OBJECT
@@ -189,10 +197,12 @@ void World::move_to(Vec<float>& position, const Vec<int>& size, Vec<float>& velo
         if (dx > dy) {
             position.y = std::floor(position.y);
             velocity.y = 0;
+            std::cout << "Being moved downwards 2\n";
         }
         else {
             position.x = std::floor(position.x);
             velocity.x = 0;
+            std::cout << "Being moved leftwards\n";
         }
     }
     // BOX'S BOTTOM RIGHT TOUCHING TOP LEFT OF AN OBJECT
@@ -203,13 +213,15 @@ void World::move_to(Vec<float>& position, const Vec<int>& size, Vec<float>& velo
         if (dx > dy) {
             position.y = std::ceil(position.y);
             velocity.y = 0;
+            std::cout << "Hanging off top left edge\n";
         }
         else {
             position.x = std::floor(position.x);
             velocity.x = 0;
+            std::cout << "Being moved leftwards 2\n";
         }
     }
-
+    std::cout << '\n';
 }
 
 void World::load_level(const Level& level) {
