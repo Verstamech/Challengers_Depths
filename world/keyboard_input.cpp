@@ -35,7 +35,7 @@ Action* KeyboardInput::collect_discrete_event(SDL_Event *event) {
             next_action_type = ActionType::AttackAll;
         }
         if (event->key.scancode == SDL_SCANCODE_F) {
-            return new ShootFireball();
+            return new ShootTrident();
         }
     }
     

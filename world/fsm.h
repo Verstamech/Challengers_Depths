@@ -12,13 +12,17 @@ enum class StateType {
     Airborne,
     Running,
     AttackAll,
-    Patrolling
+    Patrolling,
+    Aggro,
+    Charge
 };
 enum class Transition {
     Jump,
     Stop,
     Stop_Midair,
     Move,
+    Spotted,
+    Charge,
     AttackAll
 };
 

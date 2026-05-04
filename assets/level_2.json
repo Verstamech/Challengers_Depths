@@ -1,4 +1,16 @@
 {
+    "backgrounds": [
+        {
+            "distance": 4.0,
+            "filename": "spr_bg_1.png",
+            "scale": 5.0
+        },
+        {
+            "distance": 2.0,
+            "filename": "spr_bg_2.png",
+            "scale": 5.0
+        }
+    ],
     "height": 24,
     "player_spawn_location": [
         2,
@@ -9,18 +21,6 @@
             "filename": "Nighttime_Stroll.ogg",
             "loop_forever": true,
             "name": "background"
-        }
-    ],
-    "backgrounds" : [
-        {
-            "filename": "spr_bg_1.png",
-            "scale" : 5,
-            "distance": 4
-        },
-        {
-            "filename" : "spr_bg_2.png",
-            "scale" : 5,
-            "distance" : 2
         }
     ],
     "tile_filenames": [
@@ -320,6 +320,13 @@
                 20
             ],
             "tile": "ocean_tiles.json:tile_platform_top"
+        },
+        {
+            "pos": [
+                4,
+                21
+            ],
+            "tile": "ocean_tiles.json:doorway"
         },
         {
             "pos": [

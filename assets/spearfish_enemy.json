@@ -5,7 +5,7 @@
             "filename" : "spearfish_idle.png",
             "location" : [0, 0],
             "size" : [32, 32],
-            "scale" : 4,
+            "scale" : 2,
             "number_of_frames" : 1,
             "dt_per_frame" : 0.1
         },
@@ -14,22 +14,22 @@
             "filename" : "spearfish_aggro.png",
             "location" : [0, 0],
             "size" : [32, 32],
-            "scale" : 4,
+            "scale" : 2,
             "number_of_frames" : 2,
             "dt_per_frame" : 0.1
         }
     ],
     "physics" : {
         "velocity": [0, 0],
-        "acceleration" : [0, 0],
+        "acceleration" : [1, 0],
         "gravity": 0,
         "damping": 0.9,
-        "walk_acceleration": 60.0,
+        "walk_acceleration": 10.0,
         "jump_velocity": 20.0,
         "terminal_velocity": 30.0
     },
-    "size": [2,2],
-    "health": 5,
-    "max_health": 5,
+    "size": [1,1],
+    "health": 2,
+    "max_health": 2,
     "damage": 1
 }

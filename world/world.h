@@ -31,6 +31,7 @@ public:
     Tilemap tilemap;
     bool end_level{false};
     bool end_game{false};
+    bool win_game{false};
     void build_quadtree();
 
     GameObject* player;

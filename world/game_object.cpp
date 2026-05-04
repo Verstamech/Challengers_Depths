@@ -10,8 +10,9 @@ GameObject::GameObject(std::string name, FSM* fsm, Input* input, Color color)
     : obj_name{std::move(name)}, fsm{fsm}, input{input}, color{color} {}
 
 GameObject::~GameObject() {
-    delete fsm;
     delete input;
+    delete fsm;
+
 }
 
 void GameObject::update(World& world, double dt) {

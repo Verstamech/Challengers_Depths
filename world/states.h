@@ -35,6 +35,20 @@ public:
     double cooldown{0.0};
 };
 
+class Aggro : public State {
+public:
+    void on_enter(World&, GameObject&) override;
+    void update(World&, GameObject&, double dt) override;
+
+    double elapsed{0.0};
+};
+
+class Charge: public State {
+public:
+    void on_enter(World&, GameObject&) override;
+    void update(World&, GameObject&, double dt) override;
+};
+
 class AttackAllEnemies : public State {
 public:
     virtual void on_enter(World&, GameObject&) override;

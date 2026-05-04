@@ -32,6 +32,6 @@ class AttackAll : public Action {
     void perform(World&, GameObject& obj) override;
 };
 
-class ShootFireball : public Action {
+class ShootTrident : public Action {
     void perform(World&, GameObject& obj) override;
 };

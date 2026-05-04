@@ -2,21 +2,21 @@
     "projectiles":
             [
                 {
-                    "name": "fireball",
+                    "name": "trident",
                     "sprites" : [
                         {
                             "name" : "idle",
-                            "filename" : "fireball.png",
+                            "filename" : "spr_trident.png",
                             "location" : [0, 0],
-                            "size" : [10, 10],
+                            "size" : [32, 32],
                             "scale" : 2,
-                            "number_of_frames" : 2,
+                            "number_of_frames" : 1,
                             "dt_per_frame" : 0.1
                         }
                     ],
                     "physics" : {
-                        "velocity": [10, 0],
-                        "acceleration" : [0, 0],
+                        "velocity": [0, 0],
+                        "acceleration" : [20, 0],
                         "gravity": -30.0,
                         "damping": 1.0,
                         "walk_acceleration": 60.0,

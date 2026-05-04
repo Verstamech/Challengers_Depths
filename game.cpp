@@ -58,6 +58,10 @@ void Game::update() {
             case GameMode::Playing:
                 for (auto obj: world->game_objects) {
                     obj->input->handle_input(*world, *obj);
+
+                    if (obj->obj_name == "spearfish") {
+                        std::cout << obj->physics.acceleration << '\n';
+                    }
                 }
                 world->update(dt);
 
@@ -72,7 +76,14 @@ void Game::update() {
 
                 // check for game over
                 if (world->end_game) {
+                    current_level = 3;
+                    world->end_level = true;
                     mode = GameMode::GameOver;
+                    load_level();
+                }
+
+                if (world->win_game) {
+                    mode = GameMode::Won;
                 }
                 break;
         }
@@ -91,7 +102,9 @@ void Game::render() {
     camera.render(world->tilemap);
 
     // draw the player
-    camera.render(*player);
+    if (mode == GameMode::Playing) {
+        camera.render(*player);
+    }
 
     // enemies
     for (auto& obj : world->game_objects) {
@@ -137,7 +150,12 @@ void Game::load_level() {
     player->physics.position = {static_cast<float>(level.player_spawn_location.x), static_cast<float>(level.player_spawn_location.y)};
     player->fsm->current_state->on_enter(*world, *player);
     camera.set_location(player->physics.position);
-    audio.play_sounds("background", true);
+
+    bool loop{false};
+    if (current_level > 0 && current_level < 3) {
+        loop = true;
+    }
+    audio.play_sounds("background", loop);
 }
 
 void Game::create_player() {
@@ -176,19 +194,21 @@ void Game::update_enemy(GameObject& obj) {
     Transitions transitions;
     States states;
 
-    if (obj.obj_name == "spearfish" || obj.obj_name == "slime") {
+    if (obj.obj_name == "spearfish") {
         transitions = {
-            {{StateType::Standing, Transition::Move}, StateType::Patrolling},
-            {{StateType::Patrolling, Transition::Stop}, StateType::Standing}
+            {{StateType::Airborne, Transition::Move}, StateType::Patrolling},
+            {{StateType::Patrolling, Transition::Stop_Midair}, StateType::Airborne},
+            {{StateType::Patrolling, Transition::Spotted}, StateType::Aggro},
+            {{StateType::Aggro, Transition::Charge,}, StateType::Charge},
+            {{StateType::Charge, Transition::Stop_Midair}, StateType::Patrolling}
         };
 
         states = {
-            {StateType::Standing, new Standing()},
-            {StateType::Patrolling, new Patrolling()}
+            {StateType::Airborne, new Airborne()},
+            {StateType::Patrolling, new Patrolling()},
+            {StateType::Aggro, new Aggro()},
+            {StateType::Charge, new Charge()}
         };
-    }
-    else {
-        // TODO: Throw an error
     }
 
     FSM* fsm = new FSM{transitions, states, StateType::Patrolling};

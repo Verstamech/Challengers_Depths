@@ -1,0 +1,174 @@
+{
+    "backgrounds": [
+        {
+            "distance": 1.0,
+            "filename": "spr_bg_lose.png",
+            "scale": 4.0
+        }
+    ],
+    "height": 12,
+    "player_spawn_location": [
+        10,
+        1
+    ],
+    "sounds": [
+        {
+            "filename": "mus_lose.ogg",
+            "loop_forever": false,
+            "name": "background"
+        }
+    ],
+    "tile_filenames": [
+        "ocean_tiles.json"
+    ],
+    "tiles": [
+        {
+            "pos": [
+                0,
+                0
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                1,
+                0
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                2,
+                0
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                3,
+                0
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                4,
+                0
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                5,
+                0
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                6,
+                0
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                7,
+                0
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                8,
+                0
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                9,
+                0
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                10,
+                0
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                11,
+                0
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                12,
+                0
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                13,
+                0
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                14,
+                0
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                15,
+                0
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                16,
+                0
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                17,
+                0
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                18,
+                0
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                19,
+                0
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                20,
+                0
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        }
+    ],
+    "width": 21
+}

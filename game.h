@@ -4,7 +4,7 @@
 #include "world.h"
 #include "audio.h"
 
-enum class GameMode{Playing, GameOver};
+enum class GameMode{Playing, GameOver, Won};
 
 class Game {
 public:
