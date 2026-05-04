@@ -39,14 +39,18 @@ class Aggro : public State {
 public:
     void on_enter(World&, GameObject&) override;
     void update(World&, GameObject&, double dt) override;
+    Action* input(World&, GameObject&, ActionType) override;
 
     double elapsed{0.0};
+    float original_acceleration;
 };
 
 class Charge: public State {
 public:
     void on_enter(World&, GameObject&) override;
-    void update(World&, GameObject&, double dt) override;
+    Action* input(World&, GameObject&, ActionType) override;
+
+    float original_acceleration;
 };
 
 class AttackAllEnemies : public State {

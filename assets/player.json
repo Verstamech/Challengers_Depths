@@ -38,7 +38,7 @@
         "terminal_velocity": 15.0
     },
     "size": [1,1],
-    "health": 1,
+    "health": 5,
     "max_health": 5,
     "damage": 5
 }

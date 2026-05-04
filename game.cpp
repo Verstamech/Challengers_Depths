@@ -58,10 +58,6 @@ void Game::update() {
             case GameMode::Playing:
                 for (auto obj: world->game_objects) {
                     obj->input->handle_input(*world, *obj);
-
-                    if (obj->obj_name == "spearfish") {
-                        std::cout << obj->physics.acceleration << '\n';
-                    }
                 }
                 world->update(dt);
 
@@ -199,7 +195,7 @@ void Game::update_enemy(GameObject& obj) {
             {{StateType::Airborne, Transition::Move}, StateType::Patrolling},
             {{StateType::Patrolling, Transition::Stop_Midair}, StateType::Airborne},
             {{StateType::Patrolling, Transition::Spotted}, StateType::Aggro},
-            {{StateType::Aggro, Transition::Charge,}, StateType::Charge},
+            {{StateType::Aggro, Transition::Charge}, StateType::Charge},
             {{StateType::Charge, Transition::Stop_Midair}, StateType::Patrolling}
         };
 
@@ -215,6 +211,6 @@ void Game::update_enemy(GameObject& obj) {
     obj.fsm = fsm;
 
     Input* input = new AIInput{};
-    input->next_action_type = ActionType::MoveRight;
+    input->next_action_type = ActionType::MoveLeft;
     obj.input = input;
 }

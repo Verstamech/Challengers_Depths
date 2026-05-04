@@ -117,15 +117,7 @@ Action *Running::input(World& world, GameObject& obj, ActionType action_type) {
 
 // Patrolling
 void Patrolling::on_enter(World &world, GameObject &obj) {
-    obj.physics.acceleration.x = 1.0;
     obj.set_sprite("idle");
-    if (obj.flip) {
-        obj.physics.position.x = std::floor(obj.physics.position.x);
-        obj.physics.acceleration.x = -1.0;
-    }
-    else {
-        obj.physics.position.x = std::ceil(obj.physics.position.x);
-    }
     // set cooldown to a random amount of time, 3-10 seconds
     elapsed = 0;
     cooldown = randint(3, 10);
@@ -133,20 +125,20 @@ void Patrolling::on_enter(World &world, GameObject &obj) {
 }
 
 Action *Patrolling::input(World &world, GameObject &obj, ActionType action_type) {
-    if (elapsed >= cooldown) {
+    Vec<float> player_pos = world.player->physics.position;
+    Vec<float> obj_pos = obj.physics.position;
+
+    if (std::floor(player_pos.y) == std::floor(obj_pos.y)) {
+        obj.fsm->transition(Transition::Spotted, world, obj);
+        return nullptr;
+    }
+    else if (elapsed >= cooldown) {
         return Running::input(world, obj, ActionType::None);
     }
     return Running::input(world, obj, action_type);
 }
 
 void Patrolling::update(World &world, GameObject &obj, double dt) {
-    Vec<float> player_pos = world.player->physics.position;
-    Vec<float> obj_pos = obj.physics.position;
-
-    if (std::floor(player_pos.y) == std::floor(obj_pos.y)) {
-        obj.fsm->transition(Transition::Spotted, world, obj);
-    }
-
     elapsed += dt;
 }
 
@@ -160,32 +152,39 @@ void Aggro::on_enter(World& world, GameObject& obj) {
     else {
         obj.flip = false;
     }
-    obj.physics.acceleration.x = 0.0;
     elapsed = 0.0;
+
+    original_acceleration = obj.physics.acceleration.x;
+    obj.physics.acceleration.x = 0.0;
 }
 
-void Aggro::update(World& world, GameObject& obj, double dt) {
+void Aggro::update(World&, GameObject&, double dt) {
     elapsed += dt;
+}
+
+Action *Aggro::input(World& world, GameObject& obj, ActionType) {
     if (elapsed >= 1.0) {
+        obj.physics.acceleration.x = original_acceleration;
         obj.fsm->transition(Transition::Charge, world, obj);
     }
+    return nullptr;
 }
 
-void Charge::on_enter(World& world, GameObject& obj) {
-    obj.physics.acceleration.x = -10.0;
-    if (obj.flip) {
-        obj.physics.acceleration.x = 10.0;
-    }
+void Charge::on_enter(World&, GameObject& obj) {
+    original_acceleration = obj.physics.acceleration.x;
+    obj.physics.acceleration.x = obj.physics.walk_acceleration;
 }
 
-void Charge::update(World& world, GameObject& obj, double dt) {
+Action* Charge::input(World& world, GameObject& obj, ActionType) {
     float epsilon = 0.001f;
 
     // check for colliding with left wall
     if (world.collides({obj.physics.position.x - epsilon, obj.physics.position.y + obj.size.y - epsilon}) || world.collides({obj.physics.position.x + obj.size.x + epsilon, obj.physics.position.y + obj.size.y - epsilon})) {
 
+        obj.physics.acceleration.x = original_acceleration;
         obj.fsm->transition(Transition::Stop_Midair, world, obj);
     }
+    return nullptr;
 }
 
 // AttackAll

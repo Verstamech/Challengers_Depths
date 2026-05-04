@@ -31,8 +31,92 @@
         },
         {
             "pos": [
+                0,
+                1
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                0,
+                2
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                0,
+                3
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                0,
+                4
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                0,
+                5
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                0,
+                6
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                0,
+                7
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                0,
+                8
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                0,
+                9
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                0,
+                10
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                0,
+                11
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
                 1,
                 0
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                1,
+                11
             ],
             "tile": "ocean_tiles.json:tile_platform"
         },
@@ -45,8 +129,22 @@
         },
         {
             "pos": [
+                2,
+                11
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
                 3,
                 0
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                3,
+                11
             ],
             "tile": "ocean_tiles.json:tile_platform"
         },
@@ -59,8 +157,22 @@
         },
         {
             "pos": [
+                4,
+                11
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
                 5,
                 0
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                5,
+                11
             ],
             "tile": "ocean_tiles.json:tile_platform"
         },
@@ -73,8 +185,22 @@
         },
         {
             "pos": [
+                6,
+                11
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
                 7,
                 0
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                7,
+                11
             ],
             "tile": "ocean_tiles.json:tile_platform"
         },
@@ -87,8 +213,22 @@
         },
         {
             "pos": [
+                8,
+                11
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
                 9,
                 0
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                9,
+                11
             ],
             "tile": "ocean_tiles.json:tile_platform"
         },
@@ -101,8 +241,22 @@
         },
         {
             "pos": [
+                10,
+                11
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
                 11,
                 0
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                11,
+                11
             ],
             "tile": "ocean_tiles.json:tile_platform"
         },
@@ -115,8 +269,22 @@
         },
         {
             "pos": [
+                12,
+                11
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
                 13,
                 0
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                13,
+                11
             ],
             "tile": "ocean_tiles.json:tile_platform"
         },
@@ -129,8 +297,22 @@
         },
         {
             "pos": [
+                14,
+                11
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
                 15,
                 0
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                15,
+                11
             ],
             "tile": "ocean_tiles.json:tile_platform"
         },
@@ -143,8 +325,22 @@
         },
         {
             "pos": [
+                16,
+                11
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
                 17,
                 0
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                17,
+                11
             ],
             "tile": "ocean_tiles.json:tile_platform"
         },
@@ -157,6 +353,13 @@
         },
         {
             "pos": [
+                18,
+                11
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
                 19,
                 0
             ],
@@ -164,8 +367,92 @@
         },
         {
             "pos": [
+                19,
+                11
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
                 20,
                 0
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                20,
+                1
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                20,
+                2
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                20,
+                3
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                20,
+                4
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                20,
+                5
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                20,
+                6
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                20,
+                7
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                20,
+                8
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                20,
+                9
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                20,
+                10
+            ],
+            "tile": "ocean_tiles.json:tile_platform"
+        },
+        {
+            "pos": [
+                20,
+                11
             ],
             "tile": "ocean_tiles.json:tile_platform"
         }
